@@ -1,0 +1,5 @@
+Package: ClosedEstGPD
+Type: Package
+Title: Some Efficient Closed Form Estimators of the Parameters of the Generalized Pareto Distribution
+Version: 0.0.1.0
+RoxygenNote: 7.1.2.9000
