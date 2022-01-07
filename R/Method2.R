@@ -20,7 +20,7 @@ Method2 = function(x) {
     W1 = k2hat0 * max(x)/sigma2hat0
     k2hat = ifelse(W1 < 1, k2hat0, max(k_PQ))
     sigma2hat = ifelse(W1 < 1, sigma2hat0, max(sigma_PQ))
-    return(round(c(sigma2hat, k2hat), 4))
+    return(list("sigma "= sigma2hat, "k"= k2hat))
 }
 
 #x = runif(25)
