@@ -42,7 +42,7 @@ MethodLCVM = function(x) {
       opt2 = optim(c(est), fnn, x = x)
       sigma1hat = opt2$par[1]
       k1hat = opt2$par[2]
-      return(list("sigma "= sigma1hat, "k"= k1hat))
+      return(list("sigma"= sigma1hat, "k"= k1hat))
 }
 
 #MethodLCVM(x)
