@@ -20,7 +20,7 @@ MethodQM = function(x) {
     W4 = k4hat0 * max(x)/sigma4hat0
     k4hat = ifelse(W4 < 1, k4hat0, max(k_PQ))
     sigma4hat = ifelse(W4 < 1, sigma4hat0, max(sigma_PQ))
-    return(round(c(sigma4hat, k4hat),4))
+    return(list("sigma"= sigma4hat, "k"= k4hat))
 }
 
 #x = runif(25)
