@@ -1,5 +1,5 @@
 k_PQ = delta_PQ =  NULL
-Method1 = function(x){
+Method15 = function(x){
   n = length(x)
   sort_x = sort(x)
   All_Q = c(0.5, 0.6, 0.75, 0.85, n/(n + 1))
@@ -38,11 +38,11 @@ fnn = function(para, x){
 }
 
 methodMPOS = function(x) {
-      est = Method1(x)
+      est = Method15(x)
       opt2 = optim(c(est), fnn, x = x)
       sigma1hat = opt2$par[1]
       k1hat = opt2$par[2]
-  return(round(c(sigma1hat, k1hat),4))
+      return(list("sigma "= sigma1hat, "k"= k1hat))
 }
 
 #methodMPOS(25, 1, 2)
