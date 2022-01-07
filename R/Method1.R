@@ -18,7 +18,7 @@ Method1 = function(x){
     W1 = k1hat0 * max(x)/sigma1hat0
     k1hat = ifelse(W1 < 1, k1hat0, max(k_PQ))
     sigma1hat = ifelse(W1 < 1, sigma1hat0, max(sigma_PQ))
-    return(list("sigma =" sigma1hat, "k ="k1hat))
+    return(list("sigma =" sigma1hat, "k =" k1hat))
 }
 
 #x = runif(25)
