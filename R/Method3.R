@@ -54,7 +54,7 @@ Method3 = function(x){
     sigma3hatzero = ifelse(est1[1] <= 1/4, est1[2], (est1[2] + est2[2])/2)
     w3 = k3hat*max(x)/sigma3hatzero
     sigma3hat = ifelse(w3 < 1, sigma3hatzero, (est1[2] + est2[2])/2)
-    return(round(c(sigma3hat, k3hat), 4))
+    return(list("sigma "= sigma3hat, "k"= k3hat))
 }
 
 #x = runif(25)
