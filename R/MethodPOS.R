@@ -37,7 +37,7 @@ fnn = function(para, x){
   return(-s)
 }
 
-MethodMPOS = function(x) {
+MethodPOS = function(x) {
       est = Method15(x)
       opt2 = optim(c(est), fnn, x = x)
       sigma1hat = opt2$par[1]
@@ -45,5 +45,5 @@ MethodMPOS = function(x) {
       return(list("sigma"= sigma1hat, "k"= k1hat))
 }
 
-#MethodMPOS(25, 1, 2)
-#MethodMPOS(x)
+#MethodPOS(25, 1, 2)
+#MethodPOS(x)
