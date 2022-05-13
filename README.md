@@ -1,5 +1,7 @@
 # EfficientClosedGPD
 
+
+```{r}
 rm(list = ls())
 library(devtools) # Make sure that the devtools library is loaded
 install_github("suthakaranr/EfficientClosedGPD")
@@ -12,3 +14,4 @@ Method3(x) # Method 3
 MethodQM(x) # Method QM
 MethodPOS(x) # Method POS
 MethodLCVM(x) # Method LCVM
+```
