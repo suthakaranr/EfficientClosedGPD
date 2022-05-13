@@ -1,6 +1,0 @@
-Package: EfficientClosedGPD
-Type: Package
-Title: Some Efficient Closed Form Estimators of the Parameters of the Generalized Pareto Distribution
-Authors@R: person("Suthakaran", "Ratnasingam", email = "suthakaran.ratnasingam@csusb.edu", role = c("aut", "cre"))
-Version: 0.0.1.0
-RoxygenNote: 7.1.2.9000
