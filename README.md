@@ -1,1 +1,1 @@
-# ClosedEstGPD
+# EfficientClosedGPD
