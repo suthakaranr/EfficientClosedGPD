@@ -1,8 +1,8 @@
 library(stats)
-k_PQ = delta_PQ =  NULL
 Method14 = function(x){
   n = length(x)
   sort_x = sort(x)
+  k_PQ = delta_PQ =  NULL
   All_Q = c(0.5, 0.6, 0.75, 0.85, n/(n + 1))
   for (i in 1:length(All_Q)) {
     Q = All_Q[i]
