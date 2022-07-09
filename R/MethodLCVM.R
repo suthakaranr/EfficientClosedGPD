@@ -24,7 +24,7 @@ Method14 = function(x){
 }
 
 
-fnn = function(para, x){
+fnn1 = function(para, x){
   n = length(x)
   x = sort(x)
   b = numeric(n)
@@ -40,7 +40,7 @@ fnn = function(para, x){
 
 MethodLCVM = function(x) {
       est = Method14(x)
-      opt2 = optim(c(est), fnn, x = x)
+      opt2 = optim(c(est), fnn1, x = x)
       sigma1hat = opt2$par[1]
       k1hat = opt2$par[2]
       return(list("sigma"= sigma1hat, "k"= k1hat))
